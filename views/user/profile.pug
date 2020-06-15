@@ -1,0 +1,17 @@
+extend ../layout/common.pug
+block content
+  h1.display-4.text-center Update 
+  p.text-center.font-weight-light NguyenNghiaHung
+  
+  table.table
+    tr 
+      th Avatar
+      th Email
+    tr 
+      td
+        img(src=user.avatar width='60px')
+        a(href='/user/profile/avatar/'+user.id)  
+          button.btn.btn-outline-primary Change Avatar
+      td 
+        p=user.email
+  
